@@ -1,5 +1,6 @@
 package com.schwartz.rest.people;
 
+
 import java.util.ArrayList;
 import java.util.List;
 import javax.ws.rs.*;
@@ -13,20 +14,8 @@ import org.codehaus.jettison.json.JSONObject;
 // using Jersey REST implementation of JAX-RS
 
 @Path("/people")
-public class ApiHomeworkExample {
-	
-	// An inner class to define the Person type
-	class Person{
-		String name;
-		List<PhoneNumber> phoneNumbers = new ArrayList<PhoneNumber>();
-	}
-	
-	// An inner class to define the PhoneNumber type in the Person class
-	// 	TODO:  make this variables private and add getters and setters
-	class PhoneNumber{
-		String type;
-		String number;
-	}
+public class RESTFulPhoneBook {
+		
 	
 	// An array of persons to which we add persons and retrieve persons from
 	private static ArrayList<Person>  personArray= new ArrayList<Person>();
@@ -192,6 +181,7 @@ public class ApiHomeworkExample {
 		
 	}
 	
-    
+	
+
 	
 }
